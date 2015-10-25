@@ -89,7 +89,7 @@ public class CenturyNumbers {
 	static int finallevel=9;
 	static int counter=0;
 	static int N;
-	public static void create(Node node){
+	private static void create(Node node){
 		int level=node.level;
 		String exp=node.expression;
 		if(level==finallevel-1){
