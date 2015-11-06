@@ -8,10 +8,10 @@ package CodingProblems;
  * 1 2 3 4 5 6 7 8 9 = 100  
  * You can add binary operators to the blanks or you can leave some blanks to group 
  * certain digits to  one number. One possible solution to the above equation is: 
- * 12+34+5×6+7+8+9 = 100  It is treated as 12 + 34 + 5 * 6 + 7 + 8 + 9 = 100.  
+ * 12+34+5Ã—6+7+8+9 = 100  It is treated as 12 + 34 + 5 * 6 + 7 + 8 + 9 = 100.  
  * 
  * Note: Only consider addition (+) and multiplication (*) WITHOUT parentheses.  
- * Given a number N, show how many possible ways there are to fill the blanks of 1 – 9 
+ * Given a number N, show how many possible ways there are to fill the blanks of 1 â€“ 9 
  * to get the final  sum.
  *
  */
@@ -66,7 +66,7 @@ class Parser {
         double v = parseFactor();
         while(true) {
             if (c == '*') { 
-                if (c == '*') eatChar();
+                eatChar();
                 v *= parseFactor();
             } else {
                 return v;
